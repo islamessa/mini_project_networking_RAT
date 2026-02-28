@@ -59,6 +59,21 @@ In this version, significant improvements were made to ensure stability and cros
 - **Strength – Robust Output:** Handles specialized Windows characters (byte 0x8C, etc.) that typically crash basic Python RATs.
 - **Weakness – Local Network:** Currently limited to the same LAN unless port forwarding or a VPS is utilized.
 
+## Social‑Engineering Deployment
+
+The deployment of this RAT utilizes a Telegram-hosted social engineering vector. By creating a professional “Indie Developer” persona, the attacker establishes trust and provides a logical narrative for the victim to ignore security warnings.
+
+### Key Psychological Triggers Used
+
+- **Persona Building:** The channel is framed as a student-led “Beta Lab” from BGU, leveraging peer trust and academic credibility.
+- **The “False Positive” Narrative:** A pinned message pre‑emptively explains that antivirus alerts are simply due to “unsigned developer certificates,” persuading the victim to click **Run Anyway**.
+- **Functional Distraction:** The victim is provided with a fully playable Snake game (complete with a restart feature), ensuring they remain distracted while the background C2 connection is established.
+
+For the full social‑engineering narrative and download link, visit the Telegram channel:
+
+https://t.me/+jOHbVfdtX0gyZGE0
+
+
 ## Limitations & Deployment Obstacles
 
 Building a Remote Access Trojan (RAT) disguised as a game involves overcoming several technical and environmental barriers. Below are the primary challenges and constraints encountered during the development of the *Silent Snake Edition* project:
