@@ -1,6 +1,6 @@
 # RAT-Project: Silent Snake Edition
 
-**Student:** Islam Essa
+**Students:** Islam Essa 322521758   Raya Wattad 324883388
 
 ## Project Description
 
