@@ -35,7 +35,7 @@ In this version, significant improvements were made to ensure stability and cros
      ```
    - **Create the Executable:**
      ```bash
-     python -m PyInstaller --onefile --noconsole snake_rat.py
+     python -m PyInstaller --onefile --noconsole snake_game.py
      ```
 
 3. **Deployment**
