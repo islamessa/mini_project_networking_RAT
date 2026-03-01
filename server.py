@@ -17,11 +17,11 @@ def handle_client(client_socket):
 
             if command.lower() == 'exit': break
 
-            # Use a large buffer for 'dir' outputs
+            # we Used a large buffer for 'dir' outputs
             encrypted_output = client_socket.recv(16384)
             if not encrypted_output: break
             
-            # Decrypt and decode using Windows 'cp437' to fix the charmap error
+            # Decrypt and decode using Windows 'cp437' to fix the char map error
             decrypted_data = xor_crypt(encrypted_output, KEY)
             output = decrypted_data.decode('cp437', errors='replace')
             print(f"Output:\n{output}")

